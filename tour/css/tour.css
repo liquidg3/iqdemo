@@ -4859,7 +4859,7 @@
 /**
  * When showing
  */
-.vslides-showing #vslides-body {
+.vslides-showing #tour-body {
   -webkit-transition-delay: 0s;
   /* Safari */
   transition-delay: 0s;

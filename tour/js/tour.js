@@ -4,16 +4,16 @@
         throw new Error('We need jQuery to work... yo.');
     }
 
-    var endpoint = 'vslides/data/reps.json',
+    var endpoint = 'tour/data/reps.json',
         hash = window.location.hash || '#chad',
         vslides = {
             navTransitionDelay: 1000,
             showDelay: 500,
             hotspotClass: 'hvr-grow-shadow',
             sets: [
-                {slides: ['vslides/slides/intro.html']},
-                {element:  '#alert-window', slides: ['vslides/slides/alerts/amazing-news.html','vslides/slides/alerts/sure.html']},
-                {element:  '#iq-user-training', slides: ['vslides/slides/alerts/amazing-news.html']}
+                {slides: ['tour/slides/intro.html']},
+                {element:  '#alert-window', slides: ['tour/slides/alerts/amazing-news.html','tour/slides/alerts/sure.html']},
+                {element:  '#iq-user-training', slides: ['tour/slides/alerts/amazing-news.html']}
             ]
         };
 
