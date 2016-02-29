@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.vv-home #column-2 {
+    background: url(../img/aside_seperator.png) no-repeat top left;
+    height: auto;
+    padding: 30px 20px 30px 25px;
+    border-left: 1px solid #ccc;
+}
+
+.loading-animation {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 30px;
+}
+
+.vv-container {
+    max-width: 1280px;
+    width: 100%;
+}
+
+.vv-portlet {
+    max-width: 1205px;
+    /* width: 93%;
+     position: absolute;
+     left: 7%;*/
+}
+
+div.loading-animation img {
+    max-width: 100%;
+}
+
+img.howTo {
+
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+
+.flex-control-nav li a {
+    background: #000000;
+    border-radius: 50%;
+    opacity: .35;
+    transition: all .25s ease-in-out;
+}
+
+.flex-control-nav li a:hover, .flex-control-nav li a:active {
+    opacity: .75;
+}
+
+.flexslider li .fifty {
+    width: 48%;
+    float: left;
+    text-align: left;
+}
+
+.flexslider li .fifty:first-child {
+    margin-right: 2.5%;
+}
+
+.flex-direction-nav li a {
+    width: 64px;
+    height: 91px;
+    margin: -13px 0 0;
+    display: block;
+    background: url('../img/bg_direction_nav.png') no-repeat 0 0;
+    position: absolute;
+    top: 31%;
+    cursor: pointer;
+    text-indent: -9999px;
+    opacity: .25;
+    transition: all .25s ease-in-out;
+}
+
+.flex-direction-nav li a:hover {
+    opacity: 1;
+
+}
+
+.flex-direction-nav li .prev {
+    left: -54px;
+    background-position: 0;
+}
+
+.flex-direction-nav li .next {
+    background-position: -52px -16px;
+    right: -55px;
+}
+
+.flexslider .slides > li {
+    padding-bottom: 20px;
+}
+
+.flex-control-nav li a.active {
+    background-position: 0 -26px;
+    cursor: default;
+    opacity: .75;
+}
+
+.salesContact {
+    max-width: 39.5% !important;
+    height: auto;
+    min-height: 200px;
+    background: #FFFFFF;
+    float: left;
+    padding: 1%;
+    box-shadow: rgba(0, 0, 0, 0.62) 0 0 3px;
+}
+
+.businessTrack {
+    float: left;
+    width: 58%;
+    margin-right: 2.5%;
+}
+
+.imgContainer img:first-child {
+    max-width: 23%;
+}
+
+.imgContainer img:last-child {
+    max-width: 73%;
+    margin-left: 2%;
+}
+
+.salesContact h4 {
+    font-size: 1em;
+}
+
+.flexslider h2 {
+    font-size: 2.5em;
+}
+
+ul.large li {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #666666;
+    font-weight: bold;
+}
+
+ul.large {
+    margin-top: 15px;
+}
+
+@media (max-width: 1300px) {
+    .vv-portlet {
+        width: 90%;
+        position: relative;
+        /*   left: 7%;*/
+    }
+
+    .vv-home #column-1 {
+        padding: 2% 3%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #vv-hd td.vv-td1 {
+        padding: initial;
+    }
+
+    table.vv-home-insights td:nth-of-type(odd) {
+        display: none;
+    }
+
+    .vv-home #column-2 {
+        padding: 0px 5px 30px 5px;
+    }
+
+}

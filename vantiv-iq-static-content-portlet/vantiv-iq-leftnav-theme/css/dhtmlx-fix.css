@@ -1,0 +1,133 @@
+/*DHTMLX Customization*/
+/*Default is sky blue theme*/
+
+/*--------- DHTMLX Standard structure Example ---------------
+
+	<div class="vv-results">
+		<div class="vantivGridClassOrID">
+			<div class="xhdr">
+				<table class="hdr">...</table>
+			</div>
+			<div class="objbox">
+				<table class="obj">...</table>
+			</div>
+		</div>
+		<div class="vantivPaginationClassOrID">
+			....
+		</div>
+	</div>
+	
+---------------------- End of Example ----------------------*/
+
+/*This makes all dhtmlx grid at 100% */
+.vv-results > div, .xhdr, .hdr, .objbox, .obj {width:100% !important;}
+
+/*Refining Table Look & Feel*/
+.hdr td:last-child {border-right:none !important;}
+.xhdr td {font-family:arial !important;font-weight:bold !important;vertical-align:middle !important;}
+.xhdr td, .objbox td {padding:5px 5px !important;}
+.objbox td {border-right:1px solid #BFD1E1 !important;}
+.objbox td:last-child {border-right:none !important;}
+.xhdr .hdrcell {padding:0 !important;}
+
+/*second row background and input and select styling*/
+.xhdr tr:nth-child(3) td input, .xhdr .hdr tr:nth-child(3) td select {border:1px solid #999;font-family:arial !important;padding:4px 3px !important;font-weight:normal !important;}
+
+/*Row Highlighting*/
+.rowselected td {background-color:#ffffbf !important;border-top:1px solid  #BFD1E1 !important;border-bottom:1px solid  #BFD1E1 !important; }
+
+/*Pagination*/
+.dhx_toolbar_dhx_skyblue {font-family:arial !important;font-size:12px !important;height:inherit !important;padding:10px !important;}
+
+
+/*Sub Grid Styling*/
+.dhx_sub_row {width:auto !important;border:1px solid #333 !important;}
+.dhx_toolbar_poly_dhx_skyblue.dhxtoolbar_icons_18 {
+	z-index: 1050 !important;
+}
+
+table tr td span.flag {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-height: 20px;
+  max-width: 100%;
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+}
+
+table tr td span.blue-flag {
+ 	background-image: url(/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/flags/flag-blue.png);
+}
+table tr td span.red-flag {
+ 	background-image: url(/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/flags/flag-red.png);
+}
+table tr td span.purple-flag {
+ 	background-image: url(/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/flags/flag-purple.png);
+}
+table tr td span.yellow-flag {
+ 	background-image: url(/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/flags/flag-yellow.png);
+}
+table tr td span.orange-flag {
+ 	background-image: url(/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/flags/flag-orange.png);
+}
+table tr td span.pink-flag {
+ 	background-image: url(/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/flags/flag-pink.png);
+}
+table tr td span.green-flag {
+ 	background-image: url(/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/flags/flag-green.png);
+}
+table tr td span.black-flag {
+ 	background-image: url(/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/flags/flag-black.png);
+}
+table tr td span.gray-flag {
+ 	background-image: url(/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/flags/flag-gray.png);
+}
+
+#terminalOverlayGridResultsList {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+#terminalOverlayGridResultsList > .objbox{
+	height: 100% !important;
+}
+
+.dhxgrid_sort_asc {
+	display: none;
+}
+
+#ejTransactionGridResultsList, #ejTransactionGridResultsList > .objbox {
+	/*min-height: 350px;*/
+	position:inherit !important;
+}
+
+#ejTransactionGridResultsList .objbox {
+	position: inherit !important;
+}
+
+#virtualTerminalTransactionsGridResultsList {
+	height: auto !important;
+}
+
+#virtualTerminalTransactionsGridResultsList .objbox {
+	/*min-height: 200px;*/
+	position:inherit !important;
+}
+
+#ejJournalEntriesGridResultsList .hdr {
+	padding-right:0px !important;
+}
+
+#gridSettlementList{
+	height:100% !important;
+}
+#gridAuthorizationList{
+	height:100% !important;
+}
+
+
+div.gridbox .objbox{
+	overflow-y:scroll !important;
+}

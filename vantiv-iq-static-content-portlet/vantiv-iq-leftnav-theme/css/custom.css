@@ -1,0 +1,45 @@
+
+/*Fixed Grid */
+.columns-2 #column-1 {float:left;width:30%;}
+.columns-2 #column-2 {float:left;width:70%;}
+
+/*Border Navigation Fix*/
+.logo .current-site, #navigation, #navigation a, .portlet, .portlet-topper, .site-breadcrumbs ul, .aui-form-validator-message {border-radius:0;}
+
+
+.portlet-column-content {}
+
+/*content display portlet word wrap issue - fixes for IE - No FF*/
+.journal-content-article {word-break:normal !important;}
+
+/*Liferay Admin Bar Fix*/
+#skip-to-content {display:none !important;}
+.dhxtoolbar_hdrline_ll, .dhxtoolbar_hdrline_rr, .dhxtoolbar_hdrline_l, .dhxtoolbar_hdrline_r {display:none;}
+
+/*Make Grid Expand*/
+.gridbox_light {width:100% !important;}
+
+/*Modal Window double scroll fix*/
+.modal {overflow:auto;}
+
+/*liferay only */
+.vv-icon-calendar {height:22px;width:22px;right:2px;top:1px;}
+
+
+
+
+.xv-vd h1 {color:#fff !important;}
+
+/*hide back liferay portlet back link*/
+.portlet-icon-back {display:none;}
+
+/*remove tiling image**/
+.portlet-msg-info, .lfr-message-info, .portlet-msg-success, .lfr-message-success {background-image:none !important;padding:10px !important;}
+
+/*custom jquery combo*/
+.custom-combobox-input {font-family:arial;padding:5px;}
+
+/*Terms of use left nav issue fix*/
+#portlet_terms-of-use  {padding:50px 100px}
+.aui-button-input {background-color:#ffcc00;border:none;padding:10px 15px;margin:20px 0 0 20px;}
+.aui-button-input:hover {background-color:#000 !important;}

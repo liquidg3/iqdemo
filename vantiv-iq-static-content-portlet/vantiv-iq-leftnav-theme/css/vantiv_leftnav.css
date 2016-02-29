@@ -1,0 +1,180 @@
+/* -------------------------------- Navigation -------------------------------- */
+/*Navigation Liferay Fix*/
+#navigation .selected a, #navigation li.hover a, #navigation a:hover, #navigation a:focus, #navigation .child-menu li a, #navigation .yui3-dd-dragging, .lfr-navigation-proxy {background:none;}
+
+/*Navigation*/
+#navigation {float:left;width:73px;margin-right:2px;}
+#navigation ul.nav {z-index:200;background-color: #E0DEED;}
+#navigation>.nav>li {border-top:1px solid #fff;width:100%;cursor: pointer; cursor: hand;}
+#navigation>.nav>li:first-child {border-top:none;}
+#navigation>ul.nav>li>a>i {background:url(../images/icons/icons_leftnav.png) no-repeat;display:block;height:30px;width:30px;margin:3px auto;}
+#navigation>ul.nav>li>a{position:relative;padding-top:1px;border-top:1px solid #fff;border-bottom:1px solid #bbb;padding:5px 0 ;text-align:center;width:100%;min-height:60px;font-size: 9px;}
+#navigation>.nav>li>a:first-child {border-top:none;}
+#navigation>ul.nav>li>a>span.vv-product-label {bottom:0;left:0;padding-bottom:7px;width:100%;color:#555}
+
+
+
+#navigation>ul.nav>li.active>a>span.vv-product-label, #navigation>ul.nav>li:hover>a>span.vv-product-label {color:#fff;border-top:none;}
+#navigation>ul.nav>li.active {position:relative;}
+#navigation>ul.nav>li img.vv-selected-arrow {display:none;}
+#navigation>ul.nav>li.active img.vv-selected-arrow {display:initial;z-index:2;position:absolute;right:-5px;top:22px;}
+
+#navigation>ul.nav>li {position:relative;}
+#navigation>ul.nav>li img.vv-secondary-arrow {display:initial;z-index:2;position:absolute;right:5px;top:5px;}
+
+/*Dropdown Menu*/
+#navigation .dropdown-menu {border:2px solid #625BA4;background-color:#E0DEED;padding:0;-moz-border-radius: 0;-webkit-border-radius: 0;-khtml-border-radius: 0;border-radius: 0px;}
+#navigation .dropdown-menu li {padding:0;border-bottom:1px dotted #999;}
+#navigation .dropdown-menu li:hover, #navigation .dropdown-menu li.active a:hover {background-color:#fff;}
+#navigation .dropdown-menu li.active, #navigation .dropdown-menu li.active a {background-color:#E0DEED;}
+#navigation .dropdown-menu li a {padding:6px 10px;color:#615AA4;font-size:13px;}
+
+.vv-secondary {background-color:#E0DEED !important;position:relative;border-bottom:2px solid #7369CA}
+.nav-secondary {position:relative;border-bottom:none;z-index:2;margin:0;height:32px;}
+.nav-secondary li a {padding:8px 15px;font-weight:bold;border-radius:0;border:2px solid #C8C5DD;border-top:none;border-bottom:none;float:left;color:#666;margin-right:-2px;padding-bottom:7px;font-weight:normal;font-size:13px;}
+.nav-secondary li.active a {background:url(../images/background/pattern1.jpg);color:#000;border:2px solid #7369CA;border-top:none;border-bottom:none;z-index:2;padding-bottom:9px;font-weight:bold;}
+
+/*chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ .nav-secondary li.active a  { border-bottom:1px solid #eee;  }
+}
+
+.nav-secondary li:first-child a {border-left:none;}
+.nav-secondary li a:hover, .nav-secondary li a:active, .nav-secondary li.active a:active, .nav-secondary li.active a:hover {color:#000;}
+.nav-secondary-results-border-top {border-top:2px solid #7369CA !important;position:relative;top:-2px;z-index:1;}
+
+
+
+
+ul.nav.nav-list>li>ul.dropdown-menu {top:0;left:100%;margin-top:-6px;margin-left:-1px;border-radius:0 6px 6px 6px;}
+
+
+
+
+#navigation ul.nav.nav-list>li.vv-home.active>a>i,
+#navigation ul.nav.nav-list>li:hover>a>i {background-position-x: -50px;}
+
+
+#navigation ul.nav.nav-list>li.vv-home.active>a,
+#navigation ul.nav.nav-list>li.vv-home:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-home>a>i {background-position:0 0;}
+
+
+#navigation ul.nav.nav-list>li.vv-reconciliation.active>a,
+#navigation ul.nav.nav-list>li.vv-reconciliation:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-reconciliation>a>i {background-position:0 -50px;}
+
+
+#navigation ul.nav.nav-list>li.vv-operations.active>a,
+#navigation ul.nav.nav-list>li.vv-operations:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-operations>a>i {background-position:0 -100px;}
+
+
+#navigation ul.nav.nav-list>li.vv-disputes.active>a,
+#navigation ul.nav.nav-list>li.vv-disputes:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-disputes>a>i {background-position:0 -150px;}
+
+
+#navigation ul.nav.nav-list>li.vv-analytics.active>a,
+#navigation ul.nav.nav-list>li.vv-analytics:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-analytics>a>i {background-position:0 -200px;}
+
+
+#navigation ul.nav.nav-list>li.vv-giftcards.active>a,
+#navigation ul.nav.nav-list>li.vv-giftcards:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-giftcards>a>i {background-position:0 -250px;}
+
+
+#navigation ul.nav.nav-list>li.vv-administration.active>a,
+#navigation ul.nav.nav-list>li.vv-administration:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-administration>a>i {background-position:0 -300px;}
+
+
+#navigation ul.nav.nav-list>li.vv-reports.active>a,
+#navigation ul.nav.nav-list>li.vv-reports:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-reports>a>i {background-position:0 -350px;}
+
+#navigation ul.nav.nav-list>li.vv-resources.active>a,
+#navigation ul.nav.nav-list>li.vv-resources:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-resources>a>i {background-position:0 -400px;}
+
+
+#navigation ul.nav.nav-list>li.vv-self-service.active>a,
+#navigation ul.nav.nav-list>li.vv-self-service:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-self-service>a>i {background-position:0 -450px;}
+
+
+#navigation ul.nav.nav-list>li.vv-bin-search.active>a,
+#navigation ul.nav.nav-list>li.vv-bin-search:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-bin-search>a>i {background-position:0 -500px;}
+
+
+#navigation ul.nav.nav-list>li.vv-card-management.active>a,
+#navigation ul.nav.nav-list>li.vv-card-management:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-card-management>a>i {background-position:0 -550px;}
+
+
+#navigation ul.nav.nav-list>li.vv-atm.active>a,
+#navigation ul.nav.nav-list>li.vv-atm:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-atm>a>i {background-position:0 -600px;}
+
+
+#navigation ul.nav.nav-list>li.vv-transaction-research.active>a,
+#navigation ul.nav.nav-list>li.vv-transaction-research:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-transaction-research>a>i {background-position:0 -650px;}
+
+
+#navigation ul.nav.nav-list>li.vv-fraud.active>a,
+#navigation ul.nav.nav-list>li.vv-fraud:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-fraud>a>i {background-position:0 -700px;}
+
+
+#navigation ul.nav.nav-list>li.vv-daily-totals.active>a,
+#navigation ul.nav.nav-list>li.vv-daily-totals:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-daily-totals>a>i {background-position:0 -750px;}
+
+
+#navigation ul.nav.nav-list>li.vv-virtual-terminal.active>a,
+#navigation ul.nav.nav-list>li.vv-virtual-terminal:hover>a {background-color: #625BA4;}
+#navigation>ul.nav>li.vv-virtual-terminal>a>i {background-position:0 -800px;}
+
+#navigation>ul.nav>li.active, #navigation>ul.nav>li:hover {background-position-x:-50px !important;}
+
+
+/* example of coloring cu45ontent of a page in a 'product' 
+body.vv-reconciliation .journal-content-article {background-color: blue;}
+body.vv-reconciliation .portlet-title {background-color: blue;}
+
+body.vv-card-management .journal-content-article {background-color: green;}
+body.vv-card-management .portlet-title {background-color: green;}
+*/
+input#toTransactionAmount, input#fromTransactionAmount {
+	display: inline-block;
+  width: 100%;
+  height: 30px;
+  padding: 4px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+input#toTransactionAmount:focus, input#fromTransactionAmount:focus {
+  background-color: #ffffcc;
+}
+
+.font-size-14-bold{
+	font-size:12px;
+	font-weight:bold;
+}
+
+#userFirstNameSignout{
+	position:absolute;
+	width:142px;
+}

@@ -1,0 +1,30 @@
+{
+    "chad": {
+        "first_name": "Chad",
+        "last_name": "Bontrager",
+        "email": "chad.bontrager@vantiv.com",
+        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAW-AAAAJGZmZjY5ZTE5LTQ4NzItNGZlZS04NzRjLThlMDBiMzRkM2Y2MQ.jpg",
+        "phone": "970-335-6740"
+    },
+    "will": {
+        "first_name": "William",
+        "last_name": "Zembrodt",
+        "email": "william.zembrodt@vantiv.com",
+        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/005/0a0/041/2f256b5.jpg",
+        "phone": "513-900-5334"
+    },
+    "brant": {
+        "first_name": "Brant",
+        "last_name": "Schelhaas",
+        "email": "brant.schelhaas@vantiv.com",
+        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/0b1/0f6/05771ec.jpg",
+        "phone": "970-335-5360"
+    },
+    "erin": {
+        "first_name": "Erin",
+        "last_name": "Dalessandro",
+        "email": "erin.delassandro@vantiv.com",
+        "photo": "https://media.licdn.com/media/p/8/005/04d/029/36b2a0f.jpg",
+        "phone": "513-900-6843"
+    }
+}
