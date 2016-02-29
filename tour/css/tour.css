@@ -4846,7 +4846,7 @@
   bottom: 0px;
   z-index: 10000;
 }
-#vslides-body {
+#tour-body {
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
