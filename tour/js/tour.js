@@ -5,15 +5,15 @@
     }
 
     var endpoint = 'tour/data/reps.json',
-        hash = window.location.hash || '#chad',
+        hash = window.location.hash || '#default',
         vslides = {
             navTransitionDelay: 1000,
             showDelay: 500,
-            hotspotClass: 'hvr-grow-shadow',
+            //hotspotClass: 'hvr-grow-shadow',
             sets: [
                 {slides: ['tour/slides/intro.html']},
                 {element:  '#alert-window', slides: ['tour/slides/alerts/amazing-news.html','tour/slides/alerts/sure.html']},
-                {element:  '#iq-user-training', slides: ['tour/slides/alerts/amazing-news.html']}
+                {element:  '#leftnav', slides: ['tour/slides/alerts/amazing-news.html']}
             ]
         };
 
