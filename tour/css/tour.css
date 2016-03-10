@@ -4993,7 +4993,7 @@ div.vslides-hotspot {
   border-radius: 4px;
 }
 .vslides-0 #vslides-dialogue {
-  background: url(../images/fractals.png) #ffffff;
+  background: url(../images/fractals.png) #FFFFFF;
   background-size: contain;
   background-repeat: no-repeat;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 9px;
@@ -5035,7 +5035,7 @@ div.vslides-hotspot {
   background-size: initial;
 }
 #vslides-dialogue {
-  background: url(../images/fractals.png) #ffffff;
+  background: url(../images/fractals.png) #FFFFFF;
   background-size: contain;
   background-repeat: no-repeat;
 }
