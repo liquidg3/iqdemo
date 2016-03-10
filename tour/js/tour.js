@@ -13,7 +13,8 @@
             //hotspotClass: 'hvr-grow-shadow',
             sets: [
                 {slides: ['tour/slides/introduction/from-the-ground-up.html','tour/slides/introduction/iq-is-built-differently.html','tour/slides/introduction/everything-a-merchant-needs.html']},
-                {element:  '#bar-pie', slides: ['tour/slides/graphs/check-your-daily-activity.html']}
+                {element:  '#bar-pie', slides: ['tour/slides/graphs/check-your-daily-activity.html']},
+                {element:  '#sales-rep', slides: ['tour/slides/get-started/get-started.html']}
             ]
         };
 
