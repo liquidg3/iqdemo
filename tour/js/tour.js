@@ -20,6 +20,14 @@
 
     $(document).ready(function () {
 
+        setTimeout(function () {
+            $('#loading-mask').fadeOut();
+        },1500);
+
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+
         //drop in content
         $.get(endpoint).then(function (data) {
 

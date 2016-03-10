@@ -4831,8 +4831,7 @@
     transform: scale(1.025);
   }
 }
-body.vslides-showing .vslides-hotspot,
-body.vslides-0 .vslides-hotspot {
+body.vslides-showing .vslides-hotspot {
   -webkit-animation-play-state: paused;
   /* Chrome, Safari, Opera */
   animation-play-state: paused;
@@ -4851,6 +4850,11 @@ body.vslides-0 .vslides-hotspot {
   background: white;
   width: 800px;
   max-width: 95%;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   z-index: 10001;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -4948,8 +4952,8 @@ body.vslides-0 .vslides-hotspot {
 .vslides-0 #card {
   transform: rotateY(180deg);
 }
-*.vslides-highlighted,
-*.vslides-highlighted:hover {
+body:not(.vslides-showing) .vslides-highlighted,
+body:not(.vslides-showing) .vslides-highlighted:hover {
   -moz-transform: scale(1.4) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   -webkit-transform: scale(1.4) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   -o-transform: scale(1.4) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
@@ -4989,7 +4993,7 @@ div.vslides-hotspot {
   border-radius: 4px;
 }
 .vslides-0 #vslides-dialogue {
-  background: url(../images/fractals.png) #FFFFFF;
+  background: url(../images/fractals.png) #ffffff;
   background-size: contain;
   background-repeat: no-repeat;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 9px;
@@ -5031,7 +5035,7 @@ div.vslides-hotspot {
   background-size: initial;
 }
 #vslides-dialogue {
-  background: url(../images/fractals.png) #FFFFFF;
+  background: url(../images/fractals.png) #ffffff;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -5055,3 +5059,12 @@ div.vslides-hotspot {
   box-shadow: rgba(0, 0, 0, 0.62) 0 0 3px;
 }
 /*End Content CSS */
+#loading-mask {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: white;
+  z-index: 999999;
+}
