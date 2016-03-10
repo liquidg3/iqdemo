@@ -11,7 +11,7 @@
             showDelay: 500,
             //hotspotClass: 'hvr-grow-shadow',
             sets: [
-                {slides: ['tour/slides/intro.html']},
+                {slides: ['tour/slides/introduction/from-the-ground-up.html','tour/slides/introduction/iq-is-built-differently.html','tour/slides/introduction/everything-a-merchant-needs.html']},
                 {element:  '#alert-window', slides: ['tour/slides/alerts/amazing-news.html','tour/slides/alerts/sure.html']},
                 {element:  '#leftnav', slides: ['tour/slides/alerts/amazing-news.html']}
             ]
