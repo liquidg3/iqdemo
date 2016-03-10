@@ -4943,7 +4943,7 @@ body.vslides-0 .vslides-hotspot {
   transform: scale(0.95) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 }
 .vslides-0 #vslides-underlay {
-  background-color: white;
+  background-color: #ffffff;
 }
 .vslides-0 #card {
   transform: rotateY(180deg);
@@ -4987,6 +4987,12 @@ div.vslides-hotspot {
 /*Slide Container CSS */
 #vslides-dialogue {
   border-radius: 4px;
+}
+.vslides-0 #vslides-dialogue {
+  background: url(../images/fractals.png) #FFFFFF;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 9px;
 }
 #vslides-dialogue .vslides-header .vslides-close-button {
   display: block;
