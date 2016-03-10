@@ -4952,18 +4952,21 @@ body.vslides-showing .vslides-hotspot {
 .vslides-0 #card {
   transform: rotateY(180deg);
 }
-body:not(.vslides-showing) .vslides-highlighted,
-body:not(.vslides-showing) .vslides-highlighted:hover {
-  -moz-transform: scale(1.4) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-  -webkit-transform: scale(1.4) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-  -o-transform: scale(1.4) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-  -ms-transform: scale(1.4) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-  transform: scale(1.4) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+body.vslides-showing *.vslides-highlighted,
+body *.vslides-highlighted:hover {
+  -moz-transform: scale(1.2) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  -webkit-transform: scale(1.2) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  -o-transform: scale(1.2) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  -ms-transform: scale(1.2) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  transform: scale(1.2) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
   background-color: white;
   z-index: 9999;
   transition-duration: 1s;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
 }
 div.vslides-hotspot {
   cursor: pointer;
