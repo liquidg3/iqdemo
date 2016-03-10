@@ -8,6 +8,7 @@
         hash = window.location.hash || '#default',
         vslides = {
             navTransitionDelay: 1000,
+            navTransitionDelays: [2000],
             showDelay: 500,
             //hotspotClass: 'hvr-grow-shadow',
             sets: [
