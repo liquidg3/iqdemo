@@ -23,21 +23,36 @@
     border-radius: @radius;
 }
 
+
 .vslides-hotspot {
-    transition: all .3s ease-in-out;
+
     .keyframes(pulse; {
     0% {transform:scale(1)}
     100% {transform:scale(1.05)}
     });
 
-    .animation(pulse 1.5s ease-in-out infinite alternate)
+    -webkit-animation-play-state: running; /* Chrome, Safari, Opera */
+    animation-play-state: running;
+    .animation(pulse 1.5s ease-in-out infinite alternate);
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
 
+
+body.vslides-showing .vslides-hotspot,
+body.vslides-0 .vslides-hotspot {
+    -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+    animation-play-state: paused;
 }
 
 .vslides-hotspot:hover {
-    //.animation(pulse 1.5s ease-in-out 1)
-    .animation(none);
-    transform: scale(1.1);
+    -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+    animation-play-state: paused;
+    -webkit-box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.2);
 }
 
 @z-index: 9999;
@@ -120,13 +135,38 @@
     .transition(@duration: 1s);
     -webkit-transition-delay: 0.5s; /* Safari */
     transition-delay: 0s;
+    position: relative;
+    perspective: 800px;
 
+}
+
+#card {
+    transform-style: preserve-3d;
+    transition: transform 2s;
+    position: relative;
+}
+
+#front, #back {
+    transition: all 1s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+#back {
+    position: absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    background-color: white;
+    transform: rotateY( 180deg );
+    z-index: 10;
 }
 
 /**
  * When showing
  */
-.vslides-showing {
+.vslides-showing:not(.vslides-0) {
     #tour-body {
         -webkit-transition-delay: 0s; /* Safari */
         transition-delay: 0s;
@@ -136,6 +176,23 @@
         -o-transform: scale(@scale) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
         -ms-transform: scale(@scale) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
         transform: scale(@scale) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    }
+}
+
+.vslides-0 {
+
+    #vslides-underlay {
+        background-color: white;
+    }
+    #tour-body {
+        @scale: 1;
+    }
+    #card {
+        transform: rotateY( 180deg );
+    }
+    #front {
+    }
+    #back {
     }
 }
 

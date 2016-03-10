@@ -40,648 +40,654 @@
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/1c7ee86e-cd48-4e1a-8139-2500e3c1d4a2.css">
 
 </head>
-<body class=" yui3-skin-sam controls-visible signed-in private-page site vv-home">
+<body class="vslides-0 yui3-skin-sam controls-visible signed-in private-page site vv-home">
 
 <div id="tour-body">
-    <a href="#main-content" id="skip-to-content">Skip to
-        Content</a>
-    <div id="vv-preheader"><span id="iqGlobalOrganizationName">Vantiv IQ Demo</span> &nbsp;|&nbsp; <a>Change Org</a>
-    </div>
-    <div class="vv-container" style="padding:0;">
-        <header id="vv-hd" class="clearfix">
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                    <td class="vv-td1" width="46"><a><img
-                            src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/logos/iQ_logo.png"
-                            title="iQ" alt="iQ"/></a></td>
-                    <td class="vv-td2" width="5%">
-                        <div class="dropdown vv-site-switch"><a class="btn vv-btn-dropdown dropdown-toggle"
-                                                                type="button"
-                                                                id="siteDropdown" data-toggle="dropdown"> Merchant
-                            &nbsp;<span class="caret vv-font-0p8em"></span> </a>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="siteDropdown">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"
-                                                           onclick="vantivIqGlobalSitePreference('portalSitePreferenceCookie48369', 'https://www.accessmyiq.com','/fi');">FI </a>
-                                </li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"
-                                                           onclick="vantivIqGlobalSitePreference('portalSitePreferenceCookie48369', 'https://www.accessmyiq.com','/merchant');">Merchant </a>
-                                </li>
-                            </ul>
+    <div id="card">
+        <div id="front">
+            <a href="#main-content" id="skip-to-content">Skip to
+                Content</a>
+            <div id="vv-preheader"><span id="iqGlobalOrganizationName">Vantiv IQ Demo</span> &nbsp;|&nbsp; <a>Change Org</a>
+            </div>
+            <div class="vv-container" style="padding:0;">
+                <header id="vv-hd" class="clearfix">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="vv-td1" width="46"><a><img
+                                    src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/logos/iQ_logo.png"
+                                    title="iQ" alt="iQ"/></a></td>
+                            <td class="vv-td2" width="5%">
+                                <div class="dropdown vv-site-switch"><a class="btn vv-btn-dropdown dropdown-toggle"
+                                                                        type="button"
+                                                                        id="siteDropdown" data-toggle="dropdown"> Merchant
+                                    &nbsp;<span class="caret vv-font-0p8em"></span> </a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="siteDropdown">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"
+                                                                   onclick="vantivIqGlobalSitePreference('portalSitePreferenceCookie48369', 'https://www.accessmyiq.com','/fi');">FI </a>
+                                        </li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"
+                                                                   onclick="vantivIqGlobalSitePreference('portalSitePreferenceCookie48369', 'https://www.accessmyiq.com','/merchant');">Merchant </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="vv-td3">
+                                <script type="text/javascript">window.selected_search_type = "BIN Search";</script>
+                                <div class="dropdown"><a class="btn vv-btn-dropdown dropdown-toggle" type="button"
+                                                         id="searchTypeDropdown" data-toggle="dropdown"> BIN Search &nbsp;&nbsp;
+                                    <span class="caret vv-font-0p8em"></span> </a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="searchTypeDropdown">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"
+                                                                   onclick="vantivIqGlobalSearchTypeSelected('Card Number','Enter Full Card Number or Last 4 Digits',20);">Card
+                                            Number</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"
+                                                                   onclick="vantivIqGlobalSearchTypeSelected('BIN Search','ex. 123456',6);">BIN
+                                            Search</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="vv-td4">
+                                <div class="vv-global-search"><input name="globalSearch" type="text" id="globalSearch"
+                                                                     maxlength="6"
+                                                                     placeholder="ex. 123456" value=""
+                                                                     onkeypress="return vantivIqGlobalSearchOnEnter('https://www.accessmyiq.com','/merchant',event)"/>
+                                    <a> <img id="vantivIqGlobalSearchImg"
+                                             src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/iQ_search.jpg"
+                                             title="Search" alt="Search"/> </a></div>
+                            </td>
+                            <td class="vv-td5" width="360">
+                                <ul class="vv-utility">
+                                    <li><a id="alertTopbarButton" data-toggle="popover-x" data-target="#alertPopover"
+                                           data-placement="bottom"> <span class="vv-icon-alerts"> <i></i> Alerts <small
+                                            id="alertCounter"> 0
+                                    </small> </span> </a></li>
+                                    <li><a id="fileTopbarButton" data-toggle="popover-x" data-target="#filePopover"
+                                           data-placement="bottom" onclick=""> <span class="vv-icon-alerts"> <i></i> Files <small>
+                                        9+
+                                    </small> </span> </a></li>
+                                    <!-- <li> <a > <span class="vv-icon-chat"> <i></i> Chat </span> </a> </li> -->
+                                    <li><a> <span class="vv-icon-help"> <i></i> Help </span> </a></li>
+                                    <li><a id="contactUsLinkId" data-toggle="popover-x" data-target="#contactUsPopover"
+                                           data-placement="bottom"> <span class="vv-icon-contactus"> <i></i> Contact </span>
+                                    </a>
+                                    </li>
+                                    <li>
+                                        <table id="userFirstNameSignout">
+                                            <tr>
+                                                <td><a>Hello iQ Demo User</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a>Sign Out</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="alertPopover" class="popover popover-default vv-popover-30">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title vv-font-1p15em"><span class="close pull-right vv-icon-alerts"
+                                                                       data-dismiss="popover-x">&times;</span>Alerts <span
+                                class="vv-icon-alerts"><small id="alertCounter">0</small></span></h3>
+                        <br/>
+
+                        <div class="vv-alerts-header">
+                            <table class="vv-alert-list" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td width="35px"><i class="vv-icon-status vv-status-info"></i></td>
+                                    <td><span class="vv-alert-unread">No Notifications available</td>
+                                </tr>
+                                <!-- Updated markup sample for date formatting and line break 2/11/15 - jona <tr> <td width="35px"><i class="vv-icon-status vv-status-clock"></i></td> <td><span class="vv-alert-unread">Vantiv iQ will be unavailable on Sep. 20 from 12am to 6am EST.</span><br /> 8/21/14 - 8:45am </td> <td><a  class="glyphicon glyphicon-remove vv-alert-delete"></a></td> </tr> <tr> <td><i class="vv-icon-status vv-status-critical"></i></td> <td><span class="vv-alert-unread">You have a $1000 return transaction.</span><br /> 8/21/14 - 9:45am | <a >Learn more</a> </td> <td><a  class="glyphicon glyphicon-remove vv-alert-delete"></a></td> </tr> <tr> <td><i class="vv-icon-status vv-status-info"></i></td> <td><span class="vv-alert-read">Your file is ready for download.</span> 8/21/14<br /> 8/21/14 - 12:10pm | <a >Get file</a></td> <td><a  class="glyphicon glyphicon-remove vv-alert-delete"></a></td> </tr> <tr> <td><i class="vv-icon-status vv-status-info"></i></td> <td><span class="vv-alert-read">You have a new Dispute Notification. </span> 8/21/14<br /> 8/21/14 - 1:20pm | <a >View Notification</a> </td> <td><a  class="glyphicon glyphicon-remove vv-alert-delete"></a></td> </tr> -->
+                            </table>
+
                         </div>
-                    </td>
-                    <td class="vv-td3">
-                        <script type="text/javascript">window.selected_search_type = "BIN Search";</script>
-                        <div class="dropdown"><a class="btn vv-btn-dropdown dropdown-toggle" type="button"
-                                                 id="searchTypeDropdown" data-toggle="dropdown"> BIN Search &nbsp;&nbsp;
-                            <span class="caret vv-font-0p8em"></span> </a>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="searchTypeDropdown">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"
-                                                           onclick="vantivIqGlobalSearchTypeSelected('Card Number','Enter Full Card Number or Last 4 Digits',20);">Card
-                                    Number</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"
-                                                           onclick="vantivIqGlobalSearchTypeSelected('BIN Search','ex. 123456',6);">BIN
-                                    Search</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="vv-td4">
-                        <div class="vv-global-search"><input name="globalSearch" type="text" id="globalSearch"
-                                                             maxlength="6"
-                                                             placeholder="ex. 123456" value=""
-                                                             onkeypress="return vantivIqGlobalSearchOnEnter('https://www.accessmyiq.com','/merchant',event)"/>
-                            <a> <img id="vantivIqGlobalSearchImg"
-                                     src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/iQ_search.jpg"
-                                     title="Search" alt="Search"/> </a></div>
-                    </td>
-                    <td class="vv-td5" width="360">
-                        <ul class="vv-utility">
-                            <li><a id="alertTopbarButton" data-toggle="popover-x" data-target="#alertPopover"
-                                   data-placement="bottom"> <span class="vv-icon-alerts"> <i></i> Alerts <small
-                                    id="alertCounter"> 0
-                            </small> </span> </a></li>
-                            <li><a id="fileTopbarButton" data-toggle="popover-x" data-target="#filePopover"
-                                   data-placement="bottom" onclick=""> <span class="vv-icon-alerts"> <i></i> Files <small>
-                                9+
-                            </small> </span> </a></li>
-                            <!-- <li> <a > <span class="vv-icon-chat"> <i></i> Chat </span> </a> </li> -->
-                            <li><a> <span class="vv-icon-help"> <i></i> Help </span> </a></li>
-                            <li><a id="contactUsLinkId" data-toggle="popover-x" data-target="#contactUsPopover"
-                                   data-placement="bottom"> <span class="vv-icon-contactus"> <i></i> Contact </span>
-                            </a>
-                            </li>
-                            <li>
-                                <table id="userFirstNameSignout">
+                    </div>
+                    <div id="filePopover" class="popover popover-default vv-popover-30">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title vv-font-1p15em"><span class="close pull-right vv-icon-alerts"
+                                                                       data-dismiss="popover-x">&times;</span>Files <span
+                                class="vv-icon-alerts"><small id="alertCounter">$fileCount</small></span></h3>
+                        <br/>
+                        <div class="popover-content">
+                            <div class="vv-alerts-header">
+                                <table class="vv-alert-list" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <!-- Updated markup sample for date formatting and line break 2/11/15 - jona -->
                                     <tr>
-                                        <td><a>Hello iQ Demo User</a></td>
+                                        <td width="35px"><i class="vv-icon-status vv-status-clock"></i></td>
+                                        <td><span class="vv-alert-unread">The export you requested at 12:10 PM on 10/30/2015 is ready.</span>
+                                        </td>
+                                        <td><a>Download</a></td>
                                     </tr>
                                     <tr>
-                                        <td><a>Sign Out</a>
-                                        </td>
+                                        <td width="35px"><i class="vv-icon-status vv-status-clock"></i></td>
+                                        <td><span class="vv-alert-unread">MD-401 for 10/30/2015 is ready.</span></td>
+                                        <td><a>Download</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="35px"><i class="vv-icon-status vv-status-clock"></i></td>
+                                        <td><span class="vv-alert-unread">MD-402 for 10/30/2015 is ready.</span></td>
+                                        <td><a>Download</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><a><span id="viewAllFiles">See All Files</span></a></td>
                                     </tr>
                                 </table>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-            <div id="alertPopover" class="popover popover-default vv-popover-30">
-                <div class="arrow"></div>
-                <h3 class="popover-title vv-font-1p15em"><span class="close pull-right vv-icon-alerts"
-                                                               data-dismiss="popover-x">&times;</span>Alerts <span
-                        class="vv-icon-alerts"><small id="alertCounter">0</small></span></h3>
-                <br/>
-
-                <div class="vv-alerts-header">
-                    <table class="vv-alert-list" width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td width="35px"><i class="vv-icon-status vv-status-info"></i></td>
-                            <td><span class="vv-alert-unread">No Notifications available</td>
-                        </tr>
-                        <!-- Updated markup sample for date formatting and line break 2/11/15 - jona <tr> <td width="35px"><i class="vv-icon-status vv-status-clock"></i></td> <td><span class="vv-alert-unread">Vantiv iQ will be unavailable on Sep. 20 from 12am to 6am EST.</span><br /> 8/21/14 - 8:45am </td> <td><a  class="glyphicon glyphicon-remove vv-alert-delete"></a></td> </tr> <tr> <td><i class="vv-icon-status vv-status-critical"></i></td> <td><span class="vv-alert-unread">You have a $1000 return transaction.</span><br /> 8/21/14 - 9:45am | <a >Learn more</a> </td> <td><a  class="glyphicon glyphicon-remove vv-alert-delete"></a></td> </tr> <tr> <td><i class="vv-icon-status vv-status-info"></i></td> <td><span class="vv-alert-read">Your file is ready for download.</span> 8/21/14<br /> 8/21/14 - 12:10pm | <a >Get file</a></td> <td><a  class="glyphicon glyphicon-remove vv-alert-delete"></a></td> </tr> <tr> <td><i class="vv-icon-status vv-status-info"></i></td> <td><span class="vv-alert-read">You have a new Dispute Notification. </span> 8/21/14<br /> 8/21/14 - 1:20pm | <a >View Notification</a> </td> <td><a  class="glyphicon glyphicon-remove vv-alert-delete"></a></td> </tr> -->
-                    </table>
-
-                </div>
-            </div>
-            <div id="filePopover" class="popover popover-default vv-popover-30">
-                <div class="arrow"></div>
-                <h3 class="popover-title vv-font-1p15em"><span class="close pull-right vv-icon-alerts"
-                                                               data-dismiss="popover-x">&times;</span>Files <span
-                        class="vv-icon-alerts"><small id="alertCounter">$fileCount</small></span></h3>
-                <br/>
-                <div class="popover-content">
-                    <div class="vv-alerts-header">
-                        <table class="vv-alert-list" width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <!-- Updated markup sample for date formatting and line break 2/11/15 - jona -->
-                            <tr>
-                                <td width="35px"><i class="vv-icon-status vv-status-clock"></i></td>
-                                <td><span class="vv-alert-unread">The export you requested at 12:10 PM on 10/30/2015 is ready.</span>
-                                </td>
-                                <td><a>Download</a></td>
-                            </tr>
-                            <tr>
-                                <td width="35px"><i class="vv-icon-status vv-status-clock"></i></td>
-                                <td><span class="vv-alert-unread">MD-401 for 10/30/2015 is ready.</span></td>
-                                <td><a>Download</a></td>
-                            </tr>
-                            <tr>
-                                <td width="35px"><i class="vv-icon-status vv-status-clock"></i></td>
-                                <td><span class="vv-alert-unread">MD-402 for 10/30/2015 is ready.</span></td>
-                                <td><a>Download</a></td>
-                            </tr>
-                            <tr>
-                                <td colspan="3"><a><span id="viewAllFiles">See All Files</span></a></td>
-                            </tr>
-                        </table>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div id="contactUsPopover" class="popover popover-default vv-popover-30">
-                <div class="arrow"></div>
-                <h3 class="popover-title vv-font-1p15em"><span class="close pull-right"
-                                                               data-dismiss="popover-x">&times;</span>Contact Us</h3>
-                <br/>
-                <div class="popover-content">
-                    <div class="">
-                        <table class="" width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <tr>
-                                <td>Email Address</td>
-                                <td>support@accessmyiq.com</td>
-                            </tr>
-                            <tr>
-                                <td>Name</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Telephone Number</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Fax Number</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Address</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>City</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>State</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>ZipCode</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Hours of Operation</td>
-                                <td></td>
-                            </tr>
-                        </table>
+                    <div id="contactUsPopover" class="popover popover-default vv-popover-30">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title vv-font-1p15em"><span class="close pull-right"
+                                                                       data-dismiss="popover-x">&times;</span>Contact Us</h3>
+                        <br/>
+                        <div class="popover-content">
+                            <div class="">
+                                <table class="" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td>Email Address</td>
+                                        <td>support@accessmyiq.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Telephone Number</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fax Number</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>City</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>State</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZipCode</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hours of Operation</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </header>
             </div>
-        </header>
-    </div>
-    <div class="vv-container vv-background-pattern">
-        <section id="vv-bd" class="vv-main-content clearfix">
-            <nav id="navigation">
-                <ul id="leftnav" class="nav nav-list">
-                    <li class="active dropdown vv-home"><a><i></i><span
-                            class="vv-product-label">Home</span></a> <img class="vv-selected-arrow"
-                                                                          src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/selected_arrow.gif"/>
-                    </li>
-                    <li class=" dropdown vv-reconciliation"><a data-toggle="dropdown"
-                                                               class="dropdown-toggle"><i></i><span
-                            class="vv-product-label">Reconciliation</span></a>
-                        <ul class="dropdown-menu">
-                            <!-- <li class=""> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;accessmyiq&#x2e;com&#x2f;group&#x2f;merchant&#x2f;reconciliation" >Reconciliation</a> </li> -->
-                            <li>
-                                <a>Summary</a>
-                            </li>
-                            <li>
-                                <a>Transaction
-                                    Research</a></li>
-                            <li>
-                                <a>Token
-                                    Tools</a></li>
-                        </ul>
-                        <img class="vv-secondary-arrow"
-                             src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/icon_secondary_arrow.png"/>
-                        <img class="vv-selected-arrow"
-                             src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/selected_arrow.gif"/>
-                    </li>
-                    <li class=" dropdown vv-administration"><a data-toggle="dropdown"
-                                                               class="dropdown-toggle"><i></i><span
-                            class="vv-product-label">Administration</span></a>
-                        <ul class="dropdown-menu">
-                            <!-- <li class=""> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;accessmyiq&#x2e;com&#x2f;group&#x2f;merchant&#x2f;administration" >Administration</a> </li> -->
-                            <li>
-                                <a>User
-                                    Administration</a></li>
-                            <li>
-                                <a>Track
-                                    Invited Users</a></li>
-                            <li>
-                                <a>Usage
-                                    Access Report</a></li>
-                        </ul>
-                        <img class="vv-secondary-arrow"
-                             src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/icon_secondary_arrow.png"/>
-                        <img class="vv-selected-arrow"
-                             src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/selected_arrow.gif"/>
-                    </li>
-                    <li class=" dropdown vv-reports"><a><i></i><span
-                            class="vv-product-label">Reports and Statements</span></a> <img class="vv-selected-arrow"
-                                                                                            src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/selected_arrow.gif"/>
-                    </li>
-                    <li class=" dropdown vv-self-service"><a><i></i><span
-                            class="vv-product-label">Self Service</span></a> <img class="vv-selected-arrow"
+            <div class="vv-container vv-background-pattern">
+                <section id="vv-bd" class="vv-main-content clearfix">
+                    <nav id="navigation">
+                        <ul id="leftnav" class="nav nav-list">
+                            <li class="active dropdown vv-home"><a><i></i><span
+                                    class="vv-product-label">Home</span></a> <img class="vv-selected-arrow"
                                                                                   src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/selected_arrow.gif"/>
-                    </li>
-                    <li class=" dropdown vv-disputes"><a data-toggle="dropdown" class="dropdown-toggle"><i></i><span
-                            class="vv-product-label">Disputes</span></a>
-                        <ul class="dropdown-menu">
-                            <!-- <li class=""> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;accessmyiq&#x2e;com&#x2f;group&#x2f;merchant&#x2f;disputes" >Disputes</a> </li> -->
-                            <li>
-                                <a>Disputes
-                                    Search</a></li>
-                            <li>
-                                <a>Import
-                                    Documents (Fast Scan)</a></li>
+                            </li>
+                            <li class=" dropdown vv-reconciliation"><a data-toggle="dropdown"
+                                                                       class="dropdown-toggle"><i></i><span
+                                    class="vv-product-label">Reconciliation</span></a>
+                                <ul class="dropdown-menu">
+                                    <!-- <li class=""> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;accessmyiq&#x2e;com&#x2f;group&#x2f;merchant&#x2f;reconciliation" >Reconciliation</a> </li> -->
+                                    <li>
+                                        <a>Summary</a>
+                                    </li>
+                                    <li>
+                                        <a>Transaction
+                                            Research</a></li>
+                                    <li>
+                                        <a>Token
+                                            Tools</a></li>
+                                </ul>
+                                <img class="vv-secondary-arrow"
+                                     src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/icon_secondary_arrow.png"/>
+                                <img class="vv-selected-arrow"
+                                     src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/selected_arrow.gif"/>
+                            </li>
+                            <li class=" dropdown vv-administration"><a data-toggle="dropdown"
+                                                                       class="dropdown-toggle"><i></i><span
+                                    class="vv-product-label">Administration</span></a>
+                                <ul class="dropdown-menu">
+                                    <!-- <li class=""> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;accessmyiq&#x2e;com&#x2f;group&#x2f;merchant&#x2f;administration" >Administration</a> </li> -->
+                                    <li>
+                                        <a>User
+                                            Administration</a></li>
+                                    <li>
+                                        <a>Track
+                                            Invited Users</a></li>
+                                    <li>
+                                        <a>Usage
+                                            Access Report</a></li>
+                                </ul>
+                                <img class="vv-secondary-arrow"
+                                     src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/icon_secondary_arrow.png"/>
+                                <img class="vv-selected-arrow"
+                                     src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/selected_arrow.gif"/>
+                            </li>
+                            <li class=" dropdown vv-reports"><a><i></i><span
+                                    class="vv-product-label">Reports and Statements</span></a> <img class="vv-selected-arrow"
+                                                                                                    src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/selected_arrow.gif"/>
+                            </li>
+                            <li class=" dropdown vv-self-service"><a><i></i><span
+                                    class="vv-product-label">Self Service</span></a> <img class="vv-selected-arrow"
+                                                                                          src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/selected_arrow.gif"/>
+                            </li>
+                            <li class=" dropdown vv-disputes"><a data-toggle="dropdown" class="dropdown-toggle"><i></i><span
+                                    class="vv-product-label">Disputes</span></a>
+                                <ul class="dropdown-menu">
+                                    <!-- <li class=""> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;accessmyiq&#x2e;com&#x2f;group&#x2f;merchant&#x2f;disputes" >Disputes</a> </li> -->
+                                    <li>
+                                        <a>Disputes
+                                            Search</a></li>
+                                    <li>
+                                        <a>Import
+                                            Documents (Fast Scan)</a></li>
+                                </ul>
+                                <img class="vv-secondary-arrow"
+                                     src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/icon_secondary_arrow.png"/>
+                                <img class="vv-selected-arrow"
+                                     src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/selected_arrow.gif"/>
+                            </li>
                         </ul>
-                        <img class="vv-secondary-arrow"
-                             src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/icon_secondary_arrow.png"/>
-                        <img class="vv-selected-arrow"
-                             src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/icons/selected_arrow.gif"/>
-                    </li>
-                </ul>
-            </nav>
-            <div class="vv-portlet" id="vvPortlet"> <!-- secondary navigation -->
-                <div class="portlet-boundary portlet-boundary_103_ portlet-static portlet-static-end " id="p_p_id_103_">
-                    <span id="p_103"></span>
-                    <div class="portlet-body"></div>
-                </div>
-                <div class="columns-2" id="main-content" role="main">
-                    <div class="portlet-layout">
-                        <div class="aui-w50 portlet-column portlet-column-first" id="column-1">
-                            <div class="portlet-dropzone portlet-column-content portlet-column-content-first"
-                                 id="layout-column_column-1">
-                                <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-journal-content "
-                                     id="p_p_id_56_INSTANCE_gm567jXgMg44_"><span id="p_56_INSTANCE_gm567jXgMg44"></span>
-                                    <div class="portlet-body">
-                                        <section class="portlet" id="portlet_56_INSTANCE_gm567jXgMg44">
-                                            <header class="portlet-topper"><h1 class="portlet-title"><span> <img
-                                                    class="icon" id="rjus"
-                                                    src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/spacer.png"
-                                                    alt=""
-                                                    style="background-image: url('https://www.accessmyiq.com/html/icons/_sprite.png'); background-position: 50% -496px; background-repeat: no-repeat; height: 16px; width: 16px;"/> </span>
-                                                <span class="portlet-title-text">Web Content Display</span></h1>
-                                                <menu class="portlet-topper-toolbar"
-                                                      id="portlet-topper-toolbar_56_INSTANCE_gm567jXgMg44"
-                                                      type="toolbar"></menu>
-                                            </header>
-                                            <div class="portlet-content">
-                                                <div class=" portlet-content-container" style="">
-                                                    <div class="portlet-body">
-                                                        <div class="businessTrack"><h2> Welcome to iQ</h2>
-                                                            <p> We're excited for you to begin using this great new
-                                                                portal!
-                                                                Be sure to watch our <strong>how-to videos</strong>&nbsp;to
-                                                                get you started. Sign up for one of our <strong>interactive
-                                                                    online training sessions</strong> via the
-                                                                GoToMeeting
-                                                                link below <strong>(new dates added!)</strong>. Then,
-                                                                take
-                                                                our <strong>new user survey</strong> to help us continue
-                                                                to
-                                                                make improvements to the system.</p>
-                                                            <div><img alt="mail" height="20"
-                                                                      src="https://www.accessmyiq.com/html/js/editor/ckeditor/plugins/smiley/images/envelope.gif"
-                                                                      title="mail" width="20"/>Just moved from <strong>Direct
-                                                                or Express</strong> to iQ? &nbsp;Check out the migration
-                                                                documents below in the quick reference guide section.
-                                                            </div>
+                    </nav>
+                    <div class="vv-portlet" id="vvPortlet"> <!-- secondary navigation -->
+                        <div class="portlet-boundary portlet-boundary_103_ portlet-static portlet-static-end " id="p_p_id_103_">
+                            <span id="p_103"></span>
+                            <div class="portlet-body"></div>
+                        </div>
+                        <div class="columns-2" id="main-content" role="main">
+                            <div class="portlet-layout">
+                                <div class="aui-w50 portlet-column portlet-column-first" id="column-1">
+                                    <div class="portlet-dropzone portlet-column-content portlet-column-content-first"
+                                         id="layout-column_column-1">
+                                        <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-journal-content "
+                                             id="p_p_id_56_INSTANCE_gm567jXgMg44_"><span id="p_56_INSTANCE_gm567jXgMg44"></span>
+                                            <div class="portlet-body">
+                                                <section class="portlet" id="portlet_56_INSTANCE_gm567jXgMg44">
+                                                    <header class="portlet-topper"><h1 class="portlet-title"><span> <img
+                                                            class="icon" id="rjus"
+                                                            src="https://www.accessmyiq.com/vantiv-iq-static-content-portlet/vantiv-iq-leftnav-theme/images/spacer.png"
+                                                            alt=""
+                                                            style="background-image: url('https://www.accessmyiq.com/html/icons/_sprite.png'); background-position: 50% -496px; background-repeat: no-repeat; height: 16px; width: 16px;"/> </span>
+                                                        <span class="portlet-title-text">Web Content Display</span></h1>
+                                                        <menu class="portlet-topper-toolbar"
+                                                              id="portlet-topper-toolbar_56_INSTANCE_gm567jXgMg44"
+                                                              type="toolbar"></menu>
+                                                    </header>
+                                                    <div class="portlet-content">
+                                                        <div class=" portlet-content-container" style="">
+                                                            <div class="portlet-body">
+                                                                <div class="businessTrack"><h2> Welcome to iQ</h2>
+                                                                    <p> We're excited for you to begin using this great new
+                                                                        portal!
+                                                                        Be sure to watch our <strong>how-to videos</strong>&nbsp;to
+                                                                        get you started. Sign up for one of our <strong>interactive
+                                                                            online training sessions</strong> via the
+                                                                        GoToMeeting
+                                                                        link below <strong>(new dates added!)</strong>. Then,
+                                                                        take
+                                                                        our <strong>new user survey</strong> to help us continue
+                                                                        to
+                                                                        make improvements to the system.</p>
+                                                                    <div><img alt="mail" height="20"
+                                                                              src="https://www.accessmyiq.com/html/js/editor/ckeditor/plugins/smiley/images/envelope.gif"
+                                                                              title="mail" width="20"/>Just moved from <strong>Direct
+                                                                        or Express</strong> to iQ? &nbsp;Check out the migration
+                                                                        documents below in the quick reference guide section.
+                                                                    </div>
 
-                                                            <hr/>
+                                                                    <hr/>
+                                                                </div>
+
+                                                                <div class="salesContact thirdone"
+                                                                     style="opacity: 0">
+                                                                    <div class="imgContainer">
+                                                                        <img class="rep_photo" src="defaultRep.jpg">
+                                                                        <img src="vantiv-lockup.png">
+                                                                    </div>
+                                                                    <hr style="margin-bottom:5px; margin-top:10px;">
+                                                                    <h4>Contact a sales representative</h4>
+                                                                    <div class="salesPerson">
+                                                                        <p><span class="rep_first_name">Sales</span>
+                                                                            <span class="rep_last_name">Support</span><br />
+                                                                            <a class="rep_email"
+                                                                               href="mailto:support@accessmyiq.com">support@accessmyiq.com</a><br>
+                                                                            <span style="font-weight:bold" class="rep_phone">866-622-2880</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="entry-links"></div>
+                                                            </div>
                                                         </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img style="width:100%; max-width:784px;" src="bar_and_pie.jpg"/>
 
-                                                        <div class="salesContact thirdone"
-                                                             style="opacity: 0">
-                                                            <div class="imgContainer">
-                                                                <img class="rep_photo" src="defaultRep.jpg">
-                                                                <img src="vantiv-lockup.png">
-                                                            </div>
-                                                            <hr style="margin-bottom:5px; margin-top:10px;">
-                                                            <h4>Contact a sales representative</h4>
-                                                            <div class="salesPerson">
-                                                                <p><span class="rep_first_name">Sales</span>
-                                                                    <span class="rep_last_name">Support</span><br />
-                                                                    <a class="rep_email"
-                                                                       href="mailto:support@accessmyiq.com">support@accessmyiq.com</a><br>
-                                                                    <span style="font-weight:bold" class="rep_phone">866-622-2880</span>
+                                        </div>
+                                        <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content "
+                                             id="p_p_id_56_INSTANCE_s6PsEaNCOZJK_"><span id="p_56_INSTANCE_s6PsEaNCOZJK"></span>
+                                            <div class="portlet-body">
+                                                <div class="portlet-borderless-container" style="">
+                                                    <div class="portlet-body">
+                                                        <div class="journal-content-article">
+                                                            <hr/>
+                                                            <h2> Helpful Links</h2>
+                                                            <p><strong>Frequently-Accessed Pages</strong></p>
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tbody>
+                                                                <tr valign="top">
+                                                                    <td width="50%">
+                                                                        <ul>
+                                                                            <li><a>iQ
+                                                                                Help Documents</a></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td width="50%">
+                                                                        <ul>
+                                                                            <li><a>Terminal Help</a></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p><strong>Quick Reference Guides</strong></p>
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tbody>
+                                                                <tr valign="top">
+                                                                    <td width="50%">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a>Payments 101</a></li>
+                                                                            <li>
+                                                                                <a>New Merchant Processing Guide</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a>Preventing Chargebacks</a></li>
+                                                                            <li>
+                                                                                <a>Security Threats and their
+                                                                                    Effects</a></li>
+                                                                            <li>
+                                                                                <a>Security Breach Response
+                                                                                    Strategy</a></li>
+                                                                            <li>
+                                                                                <a>EMV for Merchants</a></li>
+                                                                            <li>
+                                                                                <a>Express to iQ Guide</a></li>
+                                                                            <li>
+                                                                                <a>Direct to iQ Guide</a></li>
+                                                                            <li>
+                                                                                <a>Understanding Unbundled
+                                                                                    statement</a></li>
+                                                                            <li>
+                                                                                <a>Billing Reports (detailed)</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a>Fraud Reports (detailed)</a></li>
+                                                                            <li>
+                                                                                <a>Settlement Reports (detailed)</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td width="50%">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a>Guide to Interchange
+                                                                                    Management</a></li>
+                                                                            <li>
+                                                                                <a>Host Data Capture for
+                                                                                    Restaurants</a></li>
+                                                                            <li>
+                                                                                <a>Convenience Fee Conundrum</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a>PIN Transaction Security FAQs</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a>PA-DSS FAQs</a></li>
+                                                                            <li>
+                                                                                <a>PCI-DSS
+                                                                                    FAQs</a></li>
+                                                                            <li>
+                                                                                <a>Understanding Tiered billing
+                                                                                    statement</a></li>
+                                                                            <li>
+                                                                                <a>Understanding Bundled
+                                                                                    statement</a></li>
+                                                                            <li>
+                                                                                <a><u><font color="#0066cc">Quick
+                                                                                    Guide to Key Merchant Reports</font></u></a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a>Exception Reports (detailed)</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a>Interchange Reports
+                                                                                    (detailed)</a></li>
+                                                                            <li>
+                                                                                <a>Specialty Reports (detailed)</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p><strong>Other Links</strong></p>
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tbody>
+                                                                <tr valign="top">
+                                                                    <td width="50%">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a>Take our New User Survey!</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td width="50%"> &nbsp;</td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <hr/>
+                                                            <div id="iq-user-training"><p><strong>iQ User Training<img alt=""
+                                                                                                                       src="iconMonthlyTraining.png"
+                                                                                                                       style="width: 100%; max-width:200px; height: 157px; float: right;"/></strong>
+                                                            </p>
+                                                                <p> The iQ Education Team will be providing ongoing training
+                                                                    webinars on a monthly basis.</p>
+                                                                <p> These courses will cover the various features of the
+                                                                    application
+                                                                    as well as special topics requested by our users.</p>
+                                                                <p> Click the link below to view available dates/times and
+                                                                    register
+                                                                    for a class. On the registration page, select your desired
+                                                                    class
+                                                                    from the drop-down box.</p>
+                                                                <p>
+                                                                    <a>https://attendee.gotowebinar.com/rt/8953838128203353345</a>
+
                                                                 </p>
                                                             </div>
                                                         </div>
-
                                                         <div class="entry-links"></div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </section>
+                                        </div>
+                                        <div><img style="max-width:784px; width:100%;" src="formImage.jpg"/></div>
                                     </div>
                                 </div>
-                                <div>
-                                    <img style="width:100%; max-width:784px;" src="bar_and_pie.jpg"/>
-
-                                </div>
-                                <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content "
-                                     id="p_p_id_56_INSTANCE_s6PsEaNCOZJK_"><span id="p_56_INSTANCE_s6PsEaNCOZJK"></span>
-                                    <div class="portlet-body">
-                                        <div class="portlet-borderless-container" style="">
+                                <div class="aui-w50 portlet-column portlet-column-last" id="column-2">
+                                    <div class="portlet-dropzone portlet-column-content portlet-column-content-last"
+                                         id="layout-column_column-2">
+                                        <div class="portlet-boundary portlet-boundary_BrandImagePortlet_WAR_vantiviqbrandimageportlet_ portlet-static portlet-static-end "
+                                             id="p_p_id_BrandImagePortlet_WAR_vantiviqbrandimageportlet_"><span
+                                                id="p_BrandImagePortlet_WAR_vantiviqbrandimageportlet"></span>
                                             <div class="portlet-body">
-                                                <div class="journal-content-article">
-                                                    <hr/>
-                                                    <h2> Helpful Links</h2>
-                                                    <p><strong>Frequently-Accessed Pages</strong></p>
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                        <tbody>
-                                                        <tr valign="top">
-                                                            <td width="50%">
-                                                                <ul>
-                                                                    <li><a>iQ
-                                                                        Help Documents</a></li>
-                                                                </ul>
-                                                            </td>
-                                                            <td width="50%">
-                                                                <ul>
-                                                                    <li><a>Terminal Help</a></li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <p><strong>Quick Reference Guides</strong></p>
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                        <tbody>
-                                                        <tr valign="top">
-                                                            <td width="50%">
-                                                                <ul>
-                                                                    <li>
-                                                                        <a>Payments 101</a></li>
-                                                                    <li>
-                                                                        <a>New Merchant Processing Guide</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a>Preventing Chargebacks</a></li>
-                                                                    <li>
-                                                                        <a>Security Threats and their
-                                                                            Effects</a></li>
-                                                                    <li>
-                                                                        <a>Security Breach Response
-                                                                            Strategy</a></li>
-                                                                    <li>
-                                                                        <a>EMV for Merchants</a></li>
-                                                                    <li>
-                                                                        <a>Express to iQ Guide</a></li>
-                                                                    <li>
-                                                                        <a>Direct to iQ Guide</a></li>
-                                                                    <li>
-                                                                        <a>Understanding Unbundled
-                                                                            statement</a></li>
-                                                                    <li>
-                                                                        <a>Billing Reports (detailed)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a>Fraud Reports (detailed)</a></li>
-                                                                    <li>
-                                                                        <a>Settlement Reports (detailed)</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                            <td width="50%">
-                                                                <ul>
-                                                                    <li>
-                                                                        <a>Guide to Interchange
-                                                                            Management</a></li>
-                                                                    <li>
-                                                                        <a>Host Data Capture for
-                                                                            Restaurants</a></li>
-                                                                    <li>
-                                                                        <a>Convenience Fee Conundrum</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a>PIN Transaction Security FAQs</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a>PA-DSS FAQs</a></li>
-                                                                    <li>
-                                                                        <a>PCI-DSS
-                                                                            FAQs</a></li>
-                                                                    <li>
-                                                                        <a>Understanding Tiered billing
-                                                                            statement</a></li>
-                                                                    <li>
-                                                                        <a>Understanding Bundled
-                                                                            statement</a></li>
-                                                                    <li>
-                                                                        <a><u><font color="#0066cc">Quick
-                                                                            Guide to Key Merchant Reports</font></u></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a>Exception Reports (detailed)</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a>Interchange Reports
-                                                                            (detailed)</a></li>
-                                                                    <li>
-                                                                        <a>Specialty Reports (detailed)</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <p><strong>Other Links</strong></p>
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                        <tbody>
-                                                        <tr valign="top">
-                                                            <td width="50%">
-                                                                <ul>
-                                                                    <li>
-                                                                        <a>Take our New User Survey!</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                            <td width="50%"> &nbsp;</td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <hr/>
-                                                    <div id="iq-user-training"><p><strong>iQ User Training<img alt=""
-                                                                                                               src="iconMonthlyTraining.png"
-                                                                                                               style="width: 100%; max-width:200px; height: 157px; float: right;"/></strong>
-                                                    </p>
-                                                        <p> The iQ Education Team will be providing ongoing training
-                                                            webinars on a monthly basis.</p>
-                                                        <p> These courses will cover the various features of the
-                                                            application
-                                                            as well as special topics requested by our users.</p>
-                                                        <p> Click the link below to view available dates/times and
-                                                            register
-                                                            for a class. On the registration page, select your desired
-                                                            class
-                                                            from the drop-down box.</p>
-                                                        <p>
-                                                            <a>https://attendee.gotowebinar.com/rt/8953838128203353345</a>
+                                                <section class="portlet"
+                                                         id="portlet_BrandImagePortlet_WAR_vantiviqbrandimageportlet">
+                                                    <header class="portlet-topper"><h1 class="portlet-title"><span
+                                                            class="portlet-title-text">Brand Image</span></h1>
+                                                        <menu class="portlet-topper-toolbar"
+                                                              id="portlet-topper-toolbar_BrandImagePortlet_WAR_vantiviqbrandimageportlet"
+                                                              type="toolbar"></menu>
+                                                    </header>
+                                                    <div class="portlet-content">
+                                                        <div class=" portlet-content-container" style="">
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div id="alert-window">
 
-                                                        </p>
+                                            <div class="journal-content-article"
+                                                 style="z-index: 9998; position: relative; background: rgb(255, 255, 255);">
+                                                <div class="vv-alerts-header">
+                                                    <h2>Alerts</h2>
+                                                    <table class="vv-alert-list" width="100%" border="0" cellspacing="0"
+                                                           cellpadding="0">
+                                                        <tbody>
+                                                        <tr>
+
+                                                            <td width="35px"><i class="vv-icon-status vv-status-info"></i></td>
+                                                            <td><span class="vv-alert-unread">No Notifications available</span>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content "
+                                             id="p_p_id_56_INSTANCE_1vJt7tfpg0sR_"><span id="p_56_INSTANCE_1vJt7tfpg0sR"></span>
+                                            <div class="portlet-body">
+                                                <div class="portlet-borderless-container" style="">
+                                                    <div class="portlet-body">
+                                                        <div class="journal-content-article"><h2>iQ How To</h2>
+                                                            <p>
+                                                                <img style="float:right; margin-left: 15px; max-width:115px; width:100%;"
+                                                                     src="laptopPlay.png"/>
+                                                                <strong>Watch our Guided Tours</strong><br>Learn more about iQ
+                                                                from
+                                                                our helpful video series </p>
+                                                            <ul>
+                                                                <li><a>Reports & Statements</a></li>
+                                                                <li><a>Landing
+                                                                    Page</a></li>
+                                                                <li><a>Merchant
+                                                                    Summary</a></li>
+                                                                <li><a>Transaction Research</a></li>
+                                                            </ul>
+                                                            <a>See All »</a></div>
                                                     </div>
                                                 </div>
-                                                <div class="entry-links"></div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div><img style="max-width:784px; width:100%;" src="formImage.jpg"/></div>
-                            </div>
-                        </div>
-                        <div class="aui-w50 portlet-column portlet-column-last" id="column-2">
-                            <div class="portlet-dropzone portlet-column-content portlet-column-content-last"
-                                 id="layout-column_column-2">
-                                <div class="portlet-boundary portlet-boundary_BrandImagePortlet_WAR_vantiviqbrandimageportlet_ portlet-static portlet-static-end "
-                                     id="p_p_id_BrandImagePortlet_WAR_vantiviqbrandimageportlet_"><span
-                                        id="p_BrandImagePortlet_WAR_vantiviqbrandimageportlet"></span>
-                                    <div class="portlet-body">
-                                        <section class="portlet"
-                                                 id="portlet_BrandImagePortlet_WAR_vantiviqbrandimageportlet">
-                                            <header class="portlet-topper"><h1 class="portlet-title"><span
-                                                    class="portlet-title-text">Brand Image</span></h1>
-                                                <menu class="portlet-topper-toolbar"
-                                                      id="portlet-topper-toolbar_BrandImagePortlet_WAR_vantiviqbrandimageportlet"
-                                                      type="toolbar"></menu>
-                                            </header>
-                                            <div class="portlet-content">
-                                                <div class=" portlet-content-container" style="">
+                                        <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content "
+                                             id="p_p_id_56_INSTANCE_YaiJOV9QI7o7_"><span id="p_56_INSTANCE_YaiJOV9QI7o7"></span>
+                                            <div class="portlet-body">
+                                                <div class="portlet-borderless-container" style="">
+                                                    <div class="portlet-body">
+                                                        <div class="journal-content-article"><h2>Industry News &amp;
+                                                            Insights</h2>
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                   class="vv-home-insights" width="100%">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td width="55px"><img src="article.jpg"
+                                                                                          style="width: 50px; height: 50px;"/>
+                                                                    </td>
+                                                                    <td><strong>How Mobile Gives Grocery's Bricks More
+                                                                        Click</strong><br/> When it comes to studying how
+                                                                        consumers
+                                                                        use mobile to shop, the grocery market is a particularly
+                                                                        interesting case study. So much of the space is being
+                                                                        disrupted by the growing number of online
+                                                                        marketplaces<br/>
+                                                                        <a>Learn more</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td width="55px"><img src="biometric.jpg"
+                                                                                          style="width: 50px; height: 50px;"/>
+                                                                    </td>
+                                                                    <td><strong>Will Mobile Biometric Authentication Replace
+                                                                        Today's
+                                                                        Passwords?</strong><br/> We use passwords constantly to
+                                                                        log
+                                                                        into dozens of systems and services every single day.
+                                                                        And as
+                                                                        the number of systems and services we subscribe to
+                                                                        grows,
+                                                                        the more we have to remember.<br/> <a>Learn more</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td width="55px"><img src="socialMedia.jpg"
+                                                                                          style="width: 50px; height: 50px;"/>
+                                                                    </td>
+                                                                    <td><strong>Can Facebook and Twitter Accelerate Retail
+                                                                        m-Commerce Markets?</strong><br/> Mobile and web
+                                                                        channels
+                                                                        are the main entry points to retail digital
+                                                                        transformation
+                                                                        across any market. According to a recent report
+                                                                        published by
+                                                                        Transparency Market Research, the mobile-apps segment
+                                                                        held a
+                                                                        share of about 19 percent<br/> <a>Learn more</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td width="55px"><img src="china.jpg"
+                                                                                          style="width: 50px; height: 50px;"/>
+                                                                    </td>
+                                                                    <td><strong>How China Does Omnichannel</strong><br/> Whether
+                                                                        it’s a conversation in the U.S. or China, whether it’s
+                                                                        about
+                                                                        commerce online or via bricks-and-mortar — for retailers
+                                                                        and
+                                                                        e-tailors, it’s about developing strategies that
+                                                                        demonstrate
+                                                                        to its core consumer base that its strategy is all about
+                                                                        the
+                                                                        “customer experience.”<br/> <a>Learn more</a></td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <a class="btn btn-default btn-sm">See All »</a></div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </section>
-                                    </div>
-                                </div>
-                                <div id="alert-window">
-
-                                    <div class="journal-content-article"
-                                         style="z-index: 9998; position: relative; background: rgb(255, 255, 255);">
-                                        <div class="vv-alerts-header">
-                                            <h2>Alerts</h2>
-                                            <table class="vv-alert-list" width="100%" border="0" cellspacing="0"
-                                                   cellpadding="0">
-                                                <tbody>
-                                                <tr>
-
-                                                    <td width="35px"><i class="vv-icon-status vv-status-info"></i></td>
-                                                    <td><span class="vv-alert-unread">No Notifications available</span>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content "
-                                     id="p_p_id_56_INSTANCE_1vJt7tfpg0sR_"><span id="p_56_INSTANCE_1vJt7tfpg0sR"></span>
-                                    <div class="portlet-body">
-                                        <div class="portlet-borderless-container" style="">
-                                            <div class="portlet-body">
-                                                <div class="journal-content-article"><h2>iQ How To</h2>
-                                                    <p>
-                                                        <img style="float:right; margin-left: 15px; max-width:115px; width:100%;"
-                                                             src="laptopPlay.png"/>
-                                                        <strong>Watch our Guided Tours</strong><br>Learn more about iQ
-                                                        from
-                                                        our helpful video series </p>
-                                                    <ul>
-                                                        <li><a>Reports & Statements</a></li>
-                                                        <li><a>Landing
-                                                            Page</a></li>
-                                                        <li><a>Merchant
-                                                            Summary</a></li>
-                                                        <li><a>Transaction Research</a></li>
-                                                    </ul>
-                                                    <a>See All »</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content "
-                                     id="p_p_id_56_INSTANCE_YaiJOV9QI7o7_"><span id="p_56_INSTANCE_YaiJOV9QI7o7"></span>
-                                    <div class="portlet-body">
-                                        <div class="portlet-borderless-container" style="">
-                                            <div class="portlet-body">
-                                                <div class="journal-content-article"><h2>Industry News &amp;
-                                                    Insights</h2>
-                                                    <table border="0" cellpadding="0" cellspacing="0"
-                                                           class="vv-home-insights" width="100%">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td width="55px"><img src="article.jpg"
-                                                                                  style="width: 50px; height: 50px;"/>
-                                                            </td>
-                                                            <td><strong>How Mobile Gives Grocery's Bricks More
-                                                                Click</strong><br/> When it comes to studying how
-                                                                consumers
-                                                                use mobile to shop, the grocery market is a particularly
-                                                                interesting case study. So much of the space is being
-                                                                disrupted by the growing number of online
-                                                                marketplaces<br/>
-                                                                <a>Learn more</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="55px"><img src="biometric.jpg"
-                                                                                  style="width: 50px; height: 50px;"/>
-                                                            </td>
-                                                            <td><strong>Will Mobile Biometric Authentication Replace
-                                                                Today's
-                                                                Passwords?</strong><br/> We use passwords constantly to
-                                                                log
-                                                                into dozens of systems and services every single day.
-                                                                And as
-                                                                the number of systems and services we subscribe to
-                                                                grows,
-                                                                the more we have to remember.<br/> <a>Learn more</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="55px"><img src="socialMedia.jpg"
-                                                                                  style="width: 50px; height: 50px;"/>
-                                                            </td>
-                                                            <td><strong>Can Facebook and Twitter Accelerate Retail
-                                                                m-Commerce Markets?</strong><br/> Mobile and web
-                                                                channels
-                                                                are the main entry points to retail digital
-                                                                transformation
-                                                                across any market. According to a recent report
-                                                                published by
-                                                                Transparency Market Research, the mobile-apps segment
-                                                                held a
-                                                                share of about 19 percent<br/> <a>Learn more</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="55px"><img src="china.jpg"
-                                                                                  style="width: 50px; height: 50px;"/>
-                                                            </td>
-                                                            <td><strong>How China Does Omnichannel</strong><br/> Whether
-                                                                it’s a conversation in the U.S. or China, whether it’s
-                                                                about
-                                                                commerce online or via bricks-and-mortar — for retailers
-                                                                and
-                                                                e-tailors, it’s about developing strategies that
-                                                                demonstrate
-                                                                to its core consumer base that its strategy is all about
-                                                                the
-                                                                “customer experience.”<br/> <a>Learn more</a></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <a class="btn btn-default btn-sm">See All »</a></div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <form action="#" id="hrefFm" method="post" name="hrefFm"><span></span></form>
                     </div>
-                </div>
-                <form action="#" id="hrefFm" method="post" name="hrefFm"><span></span></form>
+                </section>
             </div>
-        </section>
-    </div>
-    <div class="vv-container">
-        <footer id="vv-ft" class="vv-padding-15" role="contentinfo"> For questions or feedback, please contact: <a>support@accessmyiq.com</a>
-            &nbsp;|&nbsp; <a>Terms of Use</a></footer>
+            <div class="vv-container">
+                <footer id="vv-ft" class="vv-padding-15" role="contentinfo"> For questions or feedback, please contact: <a>support@accessmyiq.com</a>
+                    &nbsp;|&nbsp; <a>Terms of Use</a></footer>
+            </div>
+        </div>
+        <div id="back">
+        </div>
     </div>
 </div>
 
