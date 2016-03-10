@@ -6,10 +6,16 @@
 
     var endpoint = 'tour/data/reps.json',
         hash = window.location.hash || '#default',
+        theRep = null,
         vslides = {
             navTransitionDelay: 1000,
             navTransitionDelays: [2000],
             showDelay: 500,
+            willShowCallback: function () {
+
+                populate_rep(theRep);
+
+            },
             //hotspotClass: 'hvr-grow-shadow',
             sets: [
                 {slides: ['tour/slides/introduction/from-the-ground-up.html','tour/slides/introduction/iq-is-built-differently.html','tour/slides/introduction/everything-a-merchant-needs.html']},
@@ -37,6 +43,7 @@
                 return;
             }
 
+            theRep = rep;
             populate_rep(rep);
 
             //wait a sec for the image to load (I should really listen to the onload of the image element, but
