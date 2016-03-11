@@ -4798,9 +4798,9 @@
   -webkit-animation-play-state: running;
   /* Chrome, Safari, Opera */
   animation-play-state: running;
-  -webkit-animation: pulse 1.5s ease-in-out infinite alternate;
-  -moz-animation: pulse 1.5s ease-in-out infinite alternate;
-  animation: pulse 1.5s ease-in-out infinite alternate;
+  -webkit-animation: pulse 1.3s ease-in-out infinite alternate;
+  -moz-animation: pulse 1.3s ease-in-out infinite alternate;
+  animation: pulse 1.3s ease-in-out infinite alternate;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
@@ -4812,7 +4812,7 @@
     transform: scale(1);
   }
   100% {
-    transform: scale(1.025);
+    transform: scale(1.015);
   }
 }
 @-webkit-keyframes pulse {
@@ -4820,7 +4820,7 @@
     transform: scale(1);
   }
   100% {
-    transform: scale(1.025);
+    transform: scale(1.015);
   }
 }
 @keyframes pulse {
@@ -4828,7 +4828,44 @@
     transform: scale(1);
   }
   100% {
-    transform: scale(1.025);
+    transform: scale(1.015);
+  }
+}
+.vslides-hotspot.cog-animate {
+  -webkit-animation-play-state: running;
+  /* Chrome, Safari, Opera */
+  animation-play-state: running;
+  -webkit-animation: pulse2 1.3s ease-in-out infinite alternate;
+  -moz-animation: pulse2 1.3s ease-in-out infinite alternate;
+  animation: pulse2 1.3s ease-in-out infinite alternate;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+@-moz-keyframes pulse2 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+@-webkit-keyframes pulse2 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+@keyframes pulse2 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
   }
 }
 body.vslides-showing .vslides-hotspot {
@@ -4859,6 +4896,9 @@ body.vslides-showing .vslides-hotspot {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+}
+#vslides-dialogue img {
+  max-width: 100%;
 }
 #vslides-dialogue .vslides-header {
   position: absolute;
@@ -5062,6 +5102,14 @@ div.vslides-hotspot {
   box-shadow: rgba(0, 0, 0, 0.62) 0 0 3px;
 }
 /*End Content CSS */
+.pie-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.graph-holder {
+  position: relative;
+}
 #loading-mask {
   position: absolute;
   left: 0px;

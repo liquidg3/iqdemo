@@ -20,6 +20,9 @@
             sets: [
                 {slides: ['tour/slides/introduction/from-the-ground-up.html','tour/slides/introduction/iq-is-built-differently.html','tour/slides/introduction/everything-a-merchant-needs.html']},
                 {element:  '#bar-pie', slides: ['tour/slides/graphs/check-your-daily-activity.html','tour/slides/graphs/week-over-week.html','tour/slides/graphs/get-your-data.html']},
+                {element:  '#the-cog', slides: ['tour/slides/settings-cog/constantly-evolving.html','tour/slides/settings-cog/multiple-locations.html','tour/slides/settings-cog/changing-your-dashboard.html']},
+                {element:  '#leftnav', slides: ['tour/slides/navigation/easy-to-find-reports.html','tour/slides/navigation/reconciliation-screen.html','tour/slides/navigation/summary-report-interactive.html']},
+                {element:  '#training-container', slides: ['tour/slides/help/training-and-support.html','tour/slides/help/instructor-led.html','tour/slides/help/vast-library.html']},
                 {element:  '#sales-rep', slides: ['tour/slides/get-started/get-started.html']}
             ]
         };
