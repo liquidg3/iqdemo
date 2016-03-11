@@ -4810,62 +4810,37 @@
 @-moz-keyframes pulse {
   0% {
     transform: scale(1);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.1);
+    box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.1);
   }
   100% {
     transform: scale(1.015);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.5);
+    box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.5);
   }
 }
 @-webkit-keyframes pulse {
   0% {
     transform: scale(1);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.1);
+    box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.1);
   }
   100% {
     transform: scale(1.015);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.5);
+    box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.5);
   }
 }
 @keyframes pulse {
   0% {
     transform: scale(1);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.1);
+    box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.1);
   }
   100% {
     transform: scale(1.015);
-  }
-}
-.vslides-hotspot.cog-animate {
-  -webkit-animation-play-state: running;
-  /* Chrome, Safari, Opera */
-  animation-play-state: running;
-  -webkit-animation: pulse2 1.3s ease-in-out infinite alternate;
-  -moz-animation: pulse2 1.3s ease-in-out infinite alternate;
-  animation: pulse2 1.3s ease-in-out infinite alternate;
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  transition: all 1s ease-out;
-}
-@-moz-keyframes pulse2 {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.25);
-  }
-}
-@-webkit-keyframes pulse2 {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.25);
-  }
-}
-@keyframes pulse2 {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.25);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.5);
+    box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.5);
   }
 }
 body.vslides-showing .vslides-hotspot {
@@ -4887,11 +4862,6 @@ body.vslides-showing .vslides-hotspot {
   background: white;
   width: 800px;
   max-width: 95%;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
   z-index: 10001;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -4899,6 +4869,9 @@ body.vslides-showing .vslides-hotspot {
 }
 #vslides-dialogue img {
   max-width: 100%;
+}
+#vslides-dialogue img.vslides-loading {
+  background: url('../images/progress.gif') no-repeat center center;
 }
 #vslides-dialogue .vslides-header {
   position: absolute;
@@ -4999,14 +4972,18 @@ body *.vslides-highlighted:hover {
   -o-transform: scale(1.2) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   -ms-transform: scale(1.2) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   transform: scale(1.2) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 20px 0 rgba(255, 0, 8, 0.9);
+  box-shadow: 0 0 20px 0 rgba(255, 0, 8, 0.9);
   background-color: white;
-  z-index: 9999;
+  z-index: 10001;
+  position: relative;
   transition-duration: 1s;
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
+}
+*.vslides-highlighted {
+  z-index: 99999 !important;
 }
 div.vslides-hotspot {
   cursor: pointer;
@@ -5036,7 +5013,7 @@ div.vslides-hotspot {
   border-radius: 4px;
 }
 .vslides-0 #vslides-dialogue {
-  background: url(../images/fractals.png) #FFFFFF;
+  background: url(../images/fractals.png) #ffffff;
   background-size: contain;
   background-repeat: no-repeat;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 9px;
@@ -5078,7 +5055,7 @@ div.vslides-hotspot {
   background-size: initial;
 }
 #vslides-dialogue {
-  background: url(../images/fractals.png) #FFFFFF;
+  background: url(../images/fractals.png) #ffffff;
   background-size: contain;
   background-repeat: no-repeat;
 }
