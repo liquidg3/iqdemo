@@ -4810,37 +4810,37 @@
 @-moz-keyframes pulse {
   0% {
     transform: scale(1);
-    -webkit-box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.1);
-    box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.1);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 121, 0, 0.1);
+    box-shadow: 0 0 20px 0 rgba(255, 121, 0, 0.1);
   }
   100% {
     transform: scale(1.015);
-    -webkit-box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.5);
-    box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.5);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 121, 0, 0.9);
+    box-shadow: 0 0 20px 0 rgba(255, 121, 0, 0.9);
   }
 }
 @-webkit-keyframes pulse {
   0% {
     transform: scale(1);
-    -webkit-box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.1);
-    box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.1);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 121, 0, 0.1);
+    box-shadow: 0 0 20px 0 rgba(255, 121, 0, 0.1);
   }
   100% {
     transform: scale(1.015);
-    -webkit-box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.5);
-    box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.5);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 121, 0, 0.9);
+    box-shadow: 0 0 20px 0 rgba(255, 121, 0, 0.9);
   }
 }
 @keyframes pulse {
   0% {
     transform: scale(1);
-    -webkit-box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.1);
-    box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.1);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 121, 0, 0.1);
+    box-shadow: 0 0 20px 0 rgba(255, 121, 0, 0.1);
   }
   100% {
     transform: scale(1.015);
-    -webkit-box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.5);
-    box-shadow: 0 0 20px 0 rgba(255, 213, 4, 0.5);
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 121, 0, 0.9);
+    box-shadow: 0 0 20px 0 rgba(255, 121, 0, 0.9);
   }
 }
 body.vslides-showing .vslides-hotspot {
@@ -4860,15 +4860,29 @@ body.vslides-showing .vslides-hotspot {
   padding: 50px 80px;
   min-height: 200px;
   background: white;
-  width: 800px;
+  width: 1000px;
   max-width: 95%;
   z-index: 10001;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
+
+#vslides-dialogue h3 {
+  font-size: 225% !important;
+}
+
+#vslides-dialogue p {
+  font-size: 21px;
+}
+
+#vslides-dialogue ul {
+  font-size:21px;
+}
+
 #vslides-dialogue img {
   max-width: 100%;
+
 }
 #vslides-dialogue img.vslides-loading {
   background: url('../images/progress.gif') no-repeat center center;
@@ -4951,6 +4965,7 @@ body.vslides-showing .vslides-hotspot {
  */
 .vslides-showing:not(.vslides-0) #tour-body {
   -webkit-transition-delay: 0s;
+
   /* Safari */
   transition-delay: 0s;
   -moz-transform: scale(0.95) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
@@ -4960,7 +4975,8 @@ body.vslides-showing .vslides-hotspot {
   transform: scale(0.95) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 }
 .vslides-0 #vslides-underlay {
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
+  background-color: #D8E4E8;
 }
 .vslides-0 #card {
   transform: rotateY(180deg);
@@ -5004,6 +5020,7 @@ div.vslides-hotspot {
   display: inline-block;
   margin: 5px;
   cursor: pointer;
+  background: #9E9E9E;
 }
 .vslides-pager .vslides-pager-dot-selected {
   background-color: #ccc;

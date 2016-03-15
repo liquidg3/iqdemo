@@ -78,7 +78,7 @@
 
         }
 
-        //special for email and image
+        //special for email, image, and phone
         if (rep.email) {
             $('.rep_email').attr('href', 'mailto:' + rep.email);
         }
@@ -86,6 +86,8 @@
         if (rep.photo) {
             $('.rep_photo').attr('src', rep.photo);
         }
+
+
 
 
     }
